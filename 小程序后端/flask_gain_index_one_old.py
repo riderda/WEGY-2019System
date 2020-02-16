@@ -110,7 +110,7 @@ def requset_quality(opener,headers):
 def requst_gain_index_one(code):
     try:
         appid="wxd1eacf33b4ed0195"
-        secret="d23f76338f86a9818593c8e14872cb8a"
+        secret=""
         request_data = '1'
         url = 'https://api.weixin.qq.com/sns/jscode2session?appid=' + appid + '&secret=' + secret + '&js_code=' + code + '&grant_type=authorization_code'
         response = urllib.request.urlopen(url=url)
@@ -121,7 +121,7 @@ def requst_gain_index_one(code):
         config={
             "host":"127.0.0.1",
             "user":"root",
-            "password":"1122qq",
+            "password":"",
             "database":"userdata",
             "charset":"utf8"
         }
